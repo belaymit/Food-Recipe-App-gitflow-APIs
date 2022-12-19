@@ -20,10 +20,73 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="index.js"></script>
-    <title>Leaderboard: Project Setup</title>
+    <title>Food Recipe App:git flow</title>
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-   <h1>file</h1>
+    <div class="container">
+      <div class="meal-wrapper">
+        <div class="meal-search">
+          <h2 class="title">Meals</h2>
+          <blockquote>
+            Real food doesn't have ingredients, real food is ingredients. <br />
+            <cite>-Jamie Oliver</cite>
+          </blockquote>
+          <div class="meal-search-box">
+            <input
+              type="text"
+              class="search-control"
+              placeholder="Enter and ingredient"
+              id="search-input"
+            />
+            <button type="submit" class="search-btn btn" id="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+        <div class="meal-result">
+          <h2 class="title">Your Search Result:</h2>
+          <div id="meal">
+            <div class="meal-item">
+              <div class="meal-img">
+                <img src="../Images/chees-burger.jfif" alt="food" />
+              </div>
+              <div class="meal-name">
+                <h3>Cheese Burger</h3>
+                <a href="#" class="recipe-btn">Get Recipe</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="meal-details">
+          <button
+            type="button"
+            class="btn recipe-close-btn"
+            id="recipe-close-btn"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+          <div class="meal-details-content">
+            <h2 class="recipe-title">Meals Name</h2>
+            <p class="recipe-category">Category Name</p>
+            <div class="recipe-instruct">
+              <h3>Instructions:</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
+                natus magni totam eum explicabo aliquam aperiam fuga veniam,
+                amet praesentium libero voluptatibus consectetur accusamus
+                labore ab aliquid minus sed veritatis.
+              </p>
+            </div>
+            <div class="recipe-meal-img">
+              <img src="../Images/chees-burger.jfif" alt="chees-buger">
+            </div>
+            <div class="recipe-link">
+              <a href="#" target="_blank">Watch Video</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
