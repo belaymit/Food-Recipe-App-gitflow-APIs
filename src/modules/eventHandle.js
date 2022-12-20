@@ -1,10 +1,8 @@
-import {
-  searchBtn, mealList, mealDetailsContent, recipeCloseBtn 
-} from './constants.js';
+import { mealList } from './constants.js';
 
 const getMealList = () => {
-  const searchInputTxt = document.getElementById('search-input').ariaValueMax.trim();
-  fetch(`www.themealdb.com/api/json/v1/1/filter.php?i=${searchInputTxt}`)
+  const searchInputTxt = document.getElementById('search-input').value.trim();
+  fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchInputTxt}`)
     .then((response) => response.json()).then((data) => {
       let html = '';
       if (data.meals) {
@@ -29,4 +27,4 @@ const getMealList = () => {
       mealList.innerHTML = html;
     });
 };
-searchBtn.addEventListener('click', getMealList);
+export default getMealList;
