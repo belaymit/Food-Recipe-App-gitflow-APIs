@@ -37,7 +37,7 @@
   --light-background-color: #f7f7f9;
   --white-background: #fff;
   --light-orange-color: #d65108;
-  --dark-orange-color: #b54507; 
+  --dark-orange-color: #b54507;
 }
 
 /*
@@ -94,7 +94,7 @@ body {
 }
 
 .meal-search cite {
-  font-size: 1 rem; 
+  font-size: 1rem;
 }
 
 .meal-search-box {
@@ -132,7 +132,7 @@ body {
   border: none;
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 2rem;
-  transition: all o.4s linear;
+  transition: all 0.4s linear;
 }
 
 .search-btn:hover {
@@ -150,7 +150,7 @@ body {
 .meal-item {
   border-radius: 1rem;
   overflow: hidden;
-  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, .79);
+  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
   margin: 2rem 0;
 }
 
@@ -203,6 +203,7 @@ body {
 .meal-details::-webkit-scrollbar {
   width: 10px;
 }
+
 .meal-details::-webkit-scrollbar-thumb {
   background: #f0f0f0;
   border-radius: 2rem;
@@ -215,6 +216,7 @@ body {
 .meal-details-content {
   margin: 2rem;
 }
+
 .meal-details-content p:not(.recipe-category) {
   padding: 1rem 0;
 }
@@ -245,7 +247,7 @@ body {
   font-weight: 600;
   color: var(--light-orange-color);
   display: inline-block;
-  padding: .2rem .5rem;
+  padding: 0.2rem 0.5rem;
 }
 
 .recipe-instruct {
@@ -253,7 +255,7 @@ body {
 }
 
 .recipe-meal-img img {
-  word-wrap: 150px;
+  word-wrap: normal;
   height: 150px;
   border-radius: 50%;
   margin: 0 auto;
@@ -268,7 +270,7 @@ body {
 .recipe-link a {
   color: #fff;
   font-size: 1.2rem;
-  font-weight: 7000;
+  font-weight: 700;
   transition: all 0.4s linear;
 }
 
@@ -277,7 +279,7 @@ body {
 }
 
 .no-matching-item {
-  grid-template-columns: 1fr!important;
+  grid-template-columns: 1fr !important;
   color: var(--light-orange-color);
   font-size: 1.8rem;
   font-weight: 600;
@@ -298,13 +300,16 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
+
   .meal-item {
     margin: 0;
   }
+
   .meal-details {
     width: 700px;
   }
 }
+
 @media screen and (min-width: 992px) {
   #meal {
     grid-template-columns: repeat(3, 1fr);
